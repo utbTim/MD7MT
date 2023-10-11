@@ -1,10 +1,17 @@
+@import url('//fonts.googleapis.com/css2?family=Alegreya&display=swap');
+
+.main{
+    text-align: center;
+}
+
 h1, h2 {
-    color: #5f5f5f; 
+    color: #ffd297; 
     text-decoration: underline;
 }
 
 p {
-    color: dimgray; 
+    margin-left: 5%;
+    color: rgb(184, 184, 184); 
     font-size: 17pt;
 }
 
@@ -16,4 +23,9 @@ p {
 .submenu {
     color: darkgoldenrod; 
     font-size: .8em;
+}
+
+body {
+    background-color: #030303;
+    font-family: 'Alegreya', serif;
 }

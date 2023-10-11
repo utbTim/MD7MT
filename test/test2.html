@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            /*margin: 0;*/
+            /*display: none;*/
+        }
+
+        .odstavec1 {
+            border-width: 1px;
+            border-style: solid;
+            border-color: brown;
+            width: 50%;
+            display: block;
+            display: inline;
+        }
+        .odstavec2 {
+            border: solid 1px brown;
+            width: 50%;
+            display: inline;
+            
+        }
+        .odstavec3 {
+            border-width: 1px;
+            border-style: solid;
+            border-bottom-color: green;
+            /*display: inline;*/
+        }
+        a {
+            border: solid 1px red;
+        }
+    </style>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>odstavec</p>
+    <p class="odstavec1">transfonter.org</p>
+    <p class="odstavec2">https://meyerweb.com/eric/tools/css/reset/</p>
+    <p class="odstavec3">odstavec 3 a odkaz <a href="index.html">tady</a></p>
+    <h1 style="font-family: 'Alegreya', serif;;">https://fonts.google.com/</h1>
 </body>
 </html>
