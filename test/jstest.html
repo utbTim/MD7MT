@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+<button type="button"
+onmouseover="document.getElementById('demo').innerHTML = 'ok'"
+onmouseout="document.getElementById('demo').innerHTML = 'neok'"
+onclick="document.getElementById('demo').innerHTML = 'YES', console.log('YES')">
+Click me to display Date and Time.</button>
+
+<button type="button" onclick = "makeItBold()">Click me</button>
+
+<button type="button" onclick = "document.getElementById('demo').style.fontWeight = 'bold'">Click me</button>
+<p id="demo">TESTTT</p>
+
+
+<button type="button" onclick = "makeItHidden()">Click me</button>
+<p id="demo2">another test</p>
+<button type="button" onclick = "makeItVisible()">Click me</button>
+
+<script>
+    function makeItBold(){
+        console.log('kkk');
+        var element = document.getElementById("demo");
+        ///var temp = document.getElementById('demo').innerHTML;
+        //document.getElementById('demo').innerHTML = '<b>'+temp+'</b>';
+        element.style.fontWeight = 'bold';
+        element.style.fontSize = '3em';
+        element.style.color = 'red';
+    }
+
+    function makeItHidden(){
+        //document.getElementById("demo2").style.display = 'none';
+        document.getElementById("demo2").style.visibility = 'hidden';
+    }
+
+    function makeItVisible(){
+        //document.getElementById("demo2").style.display = 'block';
+        document.getElementById("demo2").style.visibility = 'visible';
+    }
+</script>
+
+
+</body>
+</html> 
