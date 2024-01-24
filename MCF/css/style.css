@@ -1,0 +1,57 @@
+header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar{
+    background-color: #222529cc;
+}
+
+.player{
+    background: url(../img/player.jpg);
+}
+
+.enemy{
+    background: url(../img/enemy.jpg);
+}
+
+.main{
+    background: url(../img/main.jpg);
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 56.25%; /* (img-height / img-width * container-width) */
+                /* (853 / 1280 * 100) */
+}
+
+.description{
+    padding: 10px;
+    margin: 0px;
+}
+
+.centerBtn{
+    /* left:43%; */
+    margin: -27% 0% auto;
+    /* position: relative; */
+    /* margin: 0 auto; */
+}
+
+.releaseTime{
+    display: flex;
+}
+
+.releaseTime div{
+    flex-basis: 100px;
+}
+
+.releaseTime div p{
+    font-size: 40px;
+    margin-bottom: -14px;
+}
