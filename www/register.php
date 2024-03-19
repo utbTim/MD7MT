@@ -177,30 +177,35 @@
 
 
   <main class="form-signin w-100 m-auto">
-    <form method="post" action="index.php">
-      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    <form method="post" action="reg.php">
+      <h1 class="h3 mb-3 fw-normal">Please register</h1>
       <?php
       if ((isset($_GET["bad"])) && ($_GET["bad"] == 1)) {
-        echo '<p style="color:red;">Bad username and/or password.<br>Please try again.</p>';
+        echo '<p style="color:red;">Failed to register.<br>Please try again.</p>';
       }
       ?>
       <div class="form-floating">
-        <input type="text" class="form-control" name="username" id="floatingInput" placeholder="johndoe">
+        <input type="text" class="form-control" name="username" id="floatingInput" placeholder="username">
         <label for="floatingInput">Username</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" name="fname" id="floatingInput" placeholder="John">
+        <label for="floatingInput">First Name</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" name="lname" id="floatingInput" placeholder="Doe">
+        <label for="floatingInput">Last Name</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" name="email" id="floatingInput" placeholder="johndoe@mail.com">
+        <label for="floatingInput">Email address</label>
       </div>
       <div class="form-floating">
         <input type="password" class="form-control" name="pass" id="floatingPassword" placeholder="Password">
         <label for="floatingPassword">Password</label>
       </div>
 
-      <div class="form-check text-start my-3">
-        <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
-        <label class="form-check-label" for="flexCheckDefault">
-          Remember me
-        </label>
-      </div>
-      <input class="btn btn-primary w-100 py-2" type="submit" value="Sign in">
-      <button onclick="location.href='register.php'" class="btn btn-primary w-100 py-2" type="button">Register</button>
+      <input class="btn btn-primary w-100 py-2" type="submit" value="Register">
       <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2024</p>
     </form>
   </main>
